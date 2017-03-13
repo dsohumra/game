@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Game Over!</title>
+  </head>
+
+  <style media="screen">
+    .holder {
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    h1 {
+      color: white;
+      font-size: 32px;
+      font-family: sans-serif;
+    }
+
+    button {
+      padding: 16px;
+      background-color: white;
+      color: black;
+    }
+  </style>
+  <body background="./images/star2nologo.jpg">
+
+    <div class="holder">
+      <h1 id="winnerLine">You Won! Well done!</h1>
+      <a href="./index.html"><button type="button" name="button" >Play Again</button></a>
+    </div>
+
+  </body>
+
+  <script type="text/javascript">
+    var url = window.location.href;
+    var winnerLine = document.getElementById('winnerLine');
+
+    function getURLVariables() {
+  			var vars = {};
+        console.log("Href is" + window.location.href);
+  			var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+          // console.log("M is: " + m);
+          // console.log("Key is: " + key);
+          // console.log("Value is: " + value);
+  			  vars[key] = value;
+  			});
+  		return vars;
+  	}
+
+    var winnerCode = getURLVariables().winner;
+
+    if (winnerCode == '0') {
+      // CPU Wins
+      winnerLine.innerHTML = "Damn It! You Lost. Try again :(";
+    } else if (winnerCode == '1') {
+      // User Wins
+      winnerLine.innerHTML = "Yayy! You Won.";
+    } else {
+        // It is a draw
+        winnerLine.innerHTML = "It is a Draw! What are the chances!";
+    }
+
+  </script>
+</html>

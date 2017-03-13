@@ -1,0 +1,107 @@
+{
+  "id": 1,
+  "name": "Chandler",
+  "attack": "Joey",
+  "counterAttack": "Sarcastic Comment",
+  "defense": "Monica",
+  "image": "./images/chandler.jpg"
+}
+
+{
+  "id": 2,
+  "name": "Joey",
+  "attack": "How You Doin'",
+  "counterAttack": "Doesn't Share Food",
+  "defense": "Joey's Special - Two Pizzas",
+  "image": ""
+}
+
+{
+  "id": 3,
+  "name": "Barney",
+  "attack": "Barney Used The Playbook",
+  "counterAttack": "Counter - Wait For It - Attack",
+  "defense": "Armoured Suit",
+  "image": ""
+}
+
+{
+  "id": 4,
+  "name": "Sheldon",
+  "attack": "Sheldon Used The Force",
+  "counterAttack": "Bazinga!",
+  "defense": "",
+  "image": ""
+}
+
+{
+  "id": 5,
+  "name": "Babu Bhaiya",
+  "attack": "Aye Kutriya!",
+  "counterAttack": "Khamba",
+  "defense": "Dhotarchor",
+  "image": ""
+}
+
+{
+  "id": 6,
+  "name": "Hermione",
+  "attack": "Slapped You Like Malfoy",
+  "counterAttack": "Time Turner",
+  "defense": "Patronus",
+  "image": ""
+}
+
+{
+  "id": 7,
+  "name": "Rosesh",
+  "attack": "Poems",
+  "counterAttack": "Gudu Gudu Gudu",
+  "defense": "Momma!",
+  "image": ""
+}
+
+{
+  "id": 8,
+  "name": "Admiral General Aladeen",
+  "attack": "Pointy Nuclear Weapon",
+  "counterAttack": "Gudu Gudu Gudu",
+  "defense": "Body Double",
+  "image": ""
+}
+
+{
+  "id": 9,
+  "name": "Trump",
+  "attack": "Grab Them By Their",
+  "counterAttack": "Fake News",
+  "defense": "WALL",
+  "image": ""
+}
+
+{
+  "id": 10,
+  "name": "Bh**vi Aunty",
+  "attack": "Beep Beep Beep",
+  "counterAttack": "Beep Beep Beep",
+  "defense": "Bik Gayi Hai Yeh Gormint",
+  "image": ""
+}
+
+{
+  "id": 11,
+  "name": "Newton",
+  "attack": "Throws HC Verma At You",
+  "counterAttack": "How Do You Like Them Apples!",
+  "defense": "Tu Engineering Kar Raha Hai ! Enough Said!",
+  "image": ""
+}
+
+{
+  "id": 12,
+  "name": "Janice",
+  "attack": "Hehehehehehe",
+  "counterAttack": "OH! MY! GOD!",
+  "defense": "OH! MY! GOD!",
+  "image": ""
+}

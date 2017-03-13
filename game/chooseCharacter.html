@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Choose a Character</title>
+
+    <style media="screen">
+
+      /*Use this to list items horizontally*/
+      li {
+        display: inline;
+        list-style-type: none;
+        padding-right: 20px;
+        float: left;
+        margin-top: 8px;
+        background-color: #33000000;
+      }
+
+      li:hover {
+        outline-color: red;
+        outline-width: 2px;
+        outline-style: solid;
+        z-index: 4px;
+      }
+
+      h1 {
+        text-align: center;
+        font-family: sans-serif;
+      }
+
+      a{
+        text-decoration: none;
+        color: #fff;
+        text-align: center;
+      }
+
+      html {
+        color: #fff;
+        font-size: 18px;
+        font-family: sans-serif;
+      }
+    </style>
+  </head>
+  <body background="./images/star2nologo.jpg">
+    <h1 id="h1_choose_character">Choose a Character</h1>
+
+    <ul style="list-style:none;">
+      <li>
+        <a href="./battle.html?characterId=1">
+          <div>
+            <img src="./images/babu.jpg" alt="" width="200" height="200">
+            <p>Babu Bhaiyya</p>
+          </div>
+        </a>
+      </li>
+
+      <li>
+        <a href="./battle.html?characterId=2">
+          <div>
+            <img src="./images/aladeen.jpg" alt="" width="200" height="200">
+            <p>General Admiral Aladeen</p>
+          </div>
+        </a>
+      </li>
+
+      <li>
+        <a href="./battle.html?characterId=3">
+          <div>
+            <img src="./images/chandler.jpg" alt="" width="200" height="200">
+            <p>Chandler Bing</p>
+          </div>
+        </a>
+      </li>
+
+      <li>
+        <a href="./battle.html?characterId=4">
+          <div>
+            <img src="./images/gormint.jpg" alt="" width="200" height="200">
+            <p>Gormint Aunty</p>
+          </div>
+        </a>
+      </li>
+
+      <li>
+        <a href="./battle.html?characterId=5">
+          <div>
+            <img src="./images/hermione.jpg" alt="" width="200" height="200">
+            <p>Hermione Granger</p>
+          </div>
+        </a>
+      </li>
+
+      <li>
+        <a href="./battle.html?characterId=6">
+          <div>
+            <img src="./images/barney.png" alt="" width="200" height="200">
+            <p>Barney Stinson</p>
+          </div>
+        </a>
+      </li>
+
+      <li>
+        <a href="./battle.html?characterId=7">
+          <div>
+            <img src="./images/joey.jpg" alt="" width="200" height="200">
+            <p>Joey Tribbiani</p>
+          </div>
+        </a>
+      </li>
+
+      <!-- <li>
+        <a href="./battle.html?characterId=6">
+          <div>
+            <img src="./images/newton.jpg" alt="" width="200" height="200">
+            <p>Issac Newton</p>
+          </div>
+        </a>
+      </li> -->
+
+      <li>
+        <a href="./battle.html?characterId=8">
+          <div>
+            <img src="./images/roshesh.jpg" alt="" width="200" height="200">
+            <p>Roshesh Sarabhai</p>
+          </div>
+        </a>
+      </li>
+
+      <li>
+        <a href="./battle.html?characterId=9">
+          <div>
+            <img src="./images/sheldon.jpg" alt="" width="200" height="200">
+            <p>Sheldon Cooper</p>
+          </div>
+        </a>
+      </li>
+
+      <li>
+        <a href="./battle.html?characterId=10">
+          <div>
+            <img src="./images/trump.jpg" alt="" width="200" height="200">
+            <p>President Trump</p>
+          </div>
+        </a>
+      </li>
+
+    </ul>
+  </body>
+
+  <script type="text/javascript">
+    var url = window.location.href;
+
+    function getURLVariables() {
+  			var vars = {};
+        console.log("Href is" + window.location.href);
+  			var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+          // console.log("M is: " + m);
+          // console.log("Key is: " + key);
+          // console.log("Value is: " + value);
+  			  vars[key] = value;
+  			});
+  		return vars;
+  	}
+
+    console.log(getURLVariables());
+    variables = getURLVariables();
+
+    if (variables.user_name) {
+      document.getElementById('h1_choose_character').innerHTML =
+        variables.user_name + ", " + document.getElementById('h1_choose_character').innerHTML;
+    }
+  </script>
+</html>
